@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import style from './styles/techstack.module.css';
 
 const TechStack = () => {
-  const [stack, setStack] = useState('all');
+  const [stack, setStack] = useState('languages');
 
   const handlePageChange = (stack) => {
     setStack(stack);
