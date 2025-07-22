@@ -71,11 +71,11 @@
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Jinyi Guo**
+👤 **Antonio Fernandez**
 
 - GitHub: [GitHub](https://github.com/mybuddy4305)
-- Twitter: [Twitter](https://twitter.com/Jin-Guo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jin-guo-a95196368/)
+- Twitter: [Twitter](https://twitter.com/Antonio-Fernandez)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/antonio-fernandez-364928372)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

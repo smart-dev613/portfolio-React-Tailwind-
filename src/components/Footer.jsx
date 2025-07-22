@@ -43,7 +43,7 @@ const Footer = () => (
         {' '}
         <span className={style.span}>©</span>
         {' '}
-        Jinyi Guo
+        Antonio Fernandez
       </a>
     </abbr>
   </motion.section>

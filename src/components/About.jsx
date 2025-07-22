@@ -15,12 +15,12 @@ const About = () => (
           Hey there! I&apos;m
           {' '}
           <a
-            href="https://www.linkedin.com/in/jin-guo-a95196368"
+            href="https://www.linkedin.com/in/antonio-fernandez-364928372"
             target="_blank"
             className={style.link}
             rel="noreferrer"
           >
-            Jinyi Guo(Jin),
+            Antonio Fernandez,
           </a>
           {' '}
           Senior Full-Stack Engineer & WordPress Developer with 10+ years of experience creating scalable SaaS, AI-enhanced platforms, and multilingual content systems. Expert in React, Node.js, Spring Boot, and headless WordPress with deep cloud-native experience across AWS. Proven success in building high-performance applications with modern DevOps, LLM integration (GPT-4, LangChain), and eCommerce architecture (WooCommerce, Stripe). Known for delivering reliable solutions at scale, mentoring teams, and driving innovation with impact.
