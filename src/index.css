@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+::-webkit-scrollbar {
+  width: 8.5px;
+  height: 0;
+  background-color: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-grey);
+  border-radius: 8px;
+}
+
+.App {
+  --navy: #030b25;
+  --cyan: #22abfa;
+  --white: #dfe7f3;
+  --grey: #b1bcdc;
+  --light-grey: #1b243f;
+  --light-blue: #26517d;
+  --dark-blue: #020716;
+  --low-opacity: #000000cd;
+}
+
+.App.light {
+  --navy: #dfe7f3;
+  --cyan: #22abfa;
+  --white: #020716;
+  --grey: #030b25;
+  --dark-blue: #fff;
+  --light-grey: #dfe7f3;
+  --light-blue: #26517d;
+  --low-opacity: #ffffffcd;
+}
+
+.body {
+  background-color: var(--navy);
+}
+
+.star-canvas {
+  background-color: var(--dark-blue);
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.grey-gradient {
+  background: #3f4e85;
+  background:
+    -webkit-linear-gradient(
+      -90deg,
+      #3f4e85 0%,
+      rgba(51, 53, 80, 0) 100%
+    );
+  background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
+}
+
+.slick-slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slick-dots li button::before {
+  font-size: 0.4rem !important;
+  opacity: 1 !important;
+  color: var(--white);
+}
+
+.slick-dots li.slick-active button::before {
+  color: var(--cyan) !important;
+}
+
+.slick-arrow {
+  top: 100% !important;
+  z-index: 9;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  position: absolute;
+  opacity: 1 !important;
+  padding: 8px 10px 12px 10px;
+  top: -36px !important;
+  color: var(--white);
+  background-color: var(--low-opacity);
+}
+
+.slick-prev::before {
+  left: 0;
+}
+
+.slick-next::before {
+  right: 0;
+}
+
+.contact {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: var(--light-grey);
+  background-image:
+    linear-gradient(335deg, var(--dark-blue) 23px, transparent 23px),
+    linear-gradient(155deg, var(--dark-blue) 23px, transparent 23px),
+    linear-gradient(335deg, var(--dark-blue) 23px, transparent 23px),
+    linear-gradient(155deg, var(--dark-blue) 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 1.8rem !important;
+    top: -45px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 2rem !important;
+    padding: 10px 12px 14px 12px;
+    top: -52px !important;
+  }
+}

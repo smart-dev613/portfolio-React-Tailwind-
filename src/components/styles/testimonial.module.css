@@ -1,0 +1,277 @@
+.title {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  padding: 8px 0;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.title::after {
+  content: "";
+  background-color: var(--white);
+  width: 60px;
+  height: 2.5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--white);
+}
+
+.carousel_container {
+  position: relative;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.button {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--cyan);
+}
+
+.prev {
+  animation-name: prev;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes prev {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.next {
+  animation-name: next;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes next {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0 20px 0;
+}
+
+.card {
+  width: 92%;
+  background-color: var(--dark-blue);
+  padding: 50px 40px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translateY(6px);
+}
+
+.openquote {
+  margin: 15px 0 25px 0;
+  font-size: 2.2rem;
+  color: var(--cyan);
+}
+
+.para {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+  padding-bottom: 15px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.country {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.75rem;
+  color: var(--cyan);
+}
+
+.icon {
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+  position: relative;
+  color: var(--cyan);
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  background-color: var(--cyan);
+  transition: 0.3s;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .button {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .prev {
+    left: 10%;
+  }
+
+  .next {
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .title::after {
+    width: 80px;
+  }
+
+  .button {
+    top: 46%;
+  }
+
+  .prev {
+    left: -2%;
+  }
+
+  .next {
+    right: -2%;
+  }
+
+  .card_container {
+    flex-direction: row;
+    gap: 25px;
+    padding: 50px 35px;
+  }
+
+  .card {
+    padding: 45px 35px;
+  }
+
+  .para {
+    font-size: 0.83rem;
+    line-height: 1.15rem;
+    height: 100px;
+  }
+
+  .label {
+    margin-top: 10px;
+    align-items: flex-end;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .button {
+    font-size: 2rem;
+  }
+
+  .prev {
+    left: -1%;
+  }
+
+  .next {
+    right: -1%;
+  }
+
+  .card_container {
+    gap: 40px;
+  }
+
+  .para {
+    font-size: 0.88rem;
+    height: 110px;
+  }
+
+  .name {
+    font-size: 0.85rem;
+  }
+
+  .country {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+}
