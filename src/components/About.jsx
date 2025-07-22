@@ -61,12 +61,12 @@ const About = () => (
           Graduated with a Bachelor of Science in computer engineering from
           {' '}
           <a
-            href="https://www.ntust.edu.tw/?Lang=en"
+            href="https://www.usal.es/en"
             target="_blank"
             className={style.link}
             rel="noreferrer"
           >
-            National Taiwan University of Science and Technology
+            University of Salamanca
           </a>
           {' '}
           (2012-2016), holding a strong GPA of 8.4(/10).
