@@ -73,7 +73,7 @@
 
 👤 **Antonio Fernandez**
 
-- GitHub: [GitHub](https://github.com/mybuddy4305)
+- GitHub: [GitHub](https://github.com/smart-dev613)
 - Twitter: [Twitter](https://twitter.com/Antonio-Fernandez)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/antonio-fernandez-364928372)
 
